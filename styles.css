@@ -3,3 +3,32 @@ body {
     background: pink;
     text-align: center;
 }
+
+/* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+} */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
