@@ -1,13 +1,7 @@
 body {
     margin: 0;
-    background: pink;
-    text-align: center;
-}
-
-/* body {
-    margin: 0;
     font-family: 'Arial', sans-serif;
-} */
+}
 
 header {
     background-color: #333;
@@ -28,7 +22,27 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: rgb(200, 47, 47);
     text-decoration: none;
     margin-left: 15px;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2f1010;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    opacity: 1;
 }
