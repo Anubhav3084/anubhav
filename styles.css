@@ -3,6 +3,11 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+body p {
+    margin: 2cm;
+    font-family: 'Arial', sans-serif;
+}
+
 header {
     background-color: #333;
     color: white;
@@ -28,6 +33,14 @@ nav a {
     position: relative;
     padding: 10px;
     cursor: pointer;
+    border: 1px solid #2f1010; /* Add border to create the box effect */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease-in-out; /* Add transition effect */
+}
+
+nav a:hover {
+    background-color: #2f1010; /* Change background color on hover */
+    color: white; /* Change text color on hover */
 }
 
 nav a::before {
