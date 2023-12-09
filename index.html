@@ -1,51 +1,235 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anubhav Prasad</title>
+    <link rel="icon" href="logos/DS.svg">
     <link rel="stylesheet" href="styles.css">
-    <!-- Step 1: Include MathJax -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-        </script>
-    <!-- Step 2: Configure MathJax -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']],
-            processEscapes: true
-    }
-  });
-</script>
 </head>
-<header>
-    <div id="name">ANUBHAV PRASAD</div>
-    <nav>
-        <a href="/anubhav/navs/Anubhav_Prasad_CV.pdf">CV</a>
-        <a href="/anubhav/navs/blogs.html">BLOGS</a>
-        <a href="/anubhav/navs/projects.html">PROJECTS</a>
-        <a href="/anubhav/navs/about.html">ABOUT</a>
-    </nav>
-</header>
 
 <body>
-    <h1>Anubhav</h1>
-    <p>Hi my name is anubhav prasad, i'm currently a final year dual degree student of the department of ECE at IIT KGP
-        with my masters in AI ML.</p>
-    <p>Hi my name is anubhav prasad, i'm currently a final year dual degree student of the department of ECE at IIT KGP
-        with my masters in AI ML.</p>
-    <p>Hi my name is anubhav prasad, i'm currently a final year dual degree student of the department of ECE at IIT KGP
-        with my masters in AI ML.</p>
-    <p>Hi my name is anubhav prasad, i'm currently a final year dual degree student of the department of ECE at IIT KGP
-        with my masters in AI ML.</p>
-    <a href="/anubhav/navs/contact.html">contacts</a>
-    <p>This is an inline equation: \(E=mc^2\)</p>
+    <header>
+        <div class="headername">DATA SCIENCE DEN</div>
+        <div class="dropdown">
+            <button class="dropbtn">CONTRIBUTORS</button>
+            <div class="dropdown-content">
+                <a href="../contributors/anubhav.html">Anubhav Prasad</a>
+                <a href="contributor2/index.html">Contributor 2</a>
+                <!-- Add more contributors as needed -->
+            </div>
+        </div>
+    </header>
 
-    <p>And this is a displayed equation:</p>
-    \[
-    \int_{0}^{\infty} e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}
-    \]
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <label for="search">Search for blogs:</label>
+            <input type="text" id="search" oninput="filterBlogTopics()" placeholder="Type to search...">
+        </div>
+
+        <!-- Blog Topics as Cards -->
+        <div class="blog-cards">
+            <!-- Blog Card 1 -->
+            <div class="blog-card" data-search="Topic 1">
+                <h3>MACHINE LEARNING</h3>
+                <p>This is the content of Topic 1.</p>
+                <div class="sub-cards">
+                    <!-- Sub Card 1 -->
+                    <div class="sub-card" data-search="Sub Topic 1">
+                        <h4>Sub Topic 1</h4>
+                        <p>Content of Sub Topic 1.</p>
+                    </div>
+
+                    <!-- Sub Card 2 -->
+                    <div class="sub-card" data-search="Sub Topic 2">
+                        <h4>Sub Topic 2</h4>
+                        <p>Content of Sub Topic 2.</p>
+                    </div>
+
+                    <!-- Sub Card 3 -->
+                    <div class="sub-card" data-search="Sub Topic 3">
+                        <h4>Sub Topic 3</h4>
+                        <p>Content of Sub Topic 3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="blog-card" data-search="Topic 2">
+                <h3>DEEP LEARNING</h3>
+                <p>This is the content of Topic 2.</p>
+                <div class="sub-cards">
+                    <!-- Sub Card 1 -->
+                    <div class="sub-card" data-search="Sub Topic 1">
+                        <h4>Sub Topic 1</h4>
+                        <p>Content of Sub Topic 1.</p>
+                    </div>
+
+                    <!-- Sub Card 2 -->
+                    <div class="sub-card" data-search="Sub Topic 2">
+                        <h4>Sub Topic 2</h4>
+                        <p>Content of Sub Topic 2.</p>
+                    </div>
+
+                    <!-- Sub Card 3 -->
+                    <div class="sub-card" data-search="Sub Topic 3">
+                        <h4>Sub Topic 3</h4>
+                        <p>Content of Sub Topic 3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="blog-card" data-search="Topic 2">
+                <h3>ALGORITHMS</h3>
+                <p>This is the content of Topic 2.</p>
+                <div class="sub-cards">
+                    <!-- Sub Card 1 -->
+                    <div class="sub-card" data-search="Sub Topic 1">
+                        <h4>Sub Topic 1</h4>
+                        <p>Content of Sub Topic 1.</p>
+                    </div>
+
+                    <!-- Sub Card 2 -->
+                    <div class="sub-card" data-search="Sub Topic 2">
+                        <h4>Sub Topic 2</h4>
+                        <p>Content of Sub Topic 2.</p>
+                    </div>
+
+                    <!-- Sub Card 3 -->
+                    <div class="sub-card" data-search="Sub Topic 3">
+                        <h4>Sub Topic 3</h4>
+                        <p>Content of Sub Topic 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-cards">
+            <!-- Blog Card 4 -->
+            <div class="blog-card" data-search="Topic 2">
+                <h3>GENERATIVE AI</h3>
+                <p>This is the content of Topic 2.</p>
+                <div class="sub-cards">
+                    <!-- Sub Card 1 -->
+                    <div class="sub-card" data-search="Sub Topic 1">
+                        <h4>Sub Topic 1</h4>
+                        <p>Content of Sub Topic 1.</p>
+                    </div>
+
+                    <!-- Sub Card 2 -->
+                    <div class="sub-card" data-search="Sub Topic 2">
+                        <h4>Sub Topic 2</h4>
+                        <p>Content of Sub Topic 2.</p>
+                    </div>
+
+                    <!-- Sub Card 3 -->
+                    <div class="sub-card" data-search="Sub Topic 3">
+                        <h4>Sub Topic 3</h4>
+                        <p>Content of Sub Topic 3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 5 -->
+            <div class="blog-card" data-search="Topic 2">
+                <h3>LINEAR ALGEBRA</h3>
+                <p>This is the content of Topic 2.</p>
+                <div class="sub-cards">
+                    <!-- Sub Card 1 -->
+                    <div class="sub-card" data-search="Sub Topic 1">
+                        <h4>Sub Topic 1</h4>
+                        <p>Content of Sub Topic 1.</p>
+                    </div>
+
+                    <!-- Sub Card 2 -->
+                    <div class="sub-card" data-search="Sub Topic 2">
+                        <h4>Sub Topic 2</h4>
+                        <p>Content of Sub Topic 2.</p>
+                    </div>
+
+                    <!-- Sub Card 3 -->
+                    <div class="sub-card" data-search="Sub Topic 3">
+                        <h4>Sub Topic 3</h4>
+                        <p>Content of Sub Topic 3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 6 -->
+            <div class="blog-card" data-search="Topic 2">
+                <h3>REINFORCEMENT LEARNING</h3>
+                <p>This is the content of Topic 2.</p>
+                <div class="sub-cards">
+                    <!-- Sub Card 1 -->
+                    <div class="sub-card" data-search="Sub Topic 1">
+                        <h4>Sub Topic 1</h4>
+                        <p>Content of Sub Topic 1.</p>
+                    </div>
+
+                    <!-- Sub Card 2 -->
+                    <div class="sub-card" data-search="Sub Topic 2">
+                        <h4>Sub Topic 2</h4>
+                        <p>Content of Sub Topic 2.</p>
+                    </div>
+
+                    <!-- Sub Card 3 -->
+                    <div class="sub-card" data-search="Sub Topic 3">
+                        <h4>Sub Topic 3</h4>
+                        <p>Content of Sub Topic 3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+
+    <script>
+        function filterBlogTopics() {
+            const searchInput = document.getElementById('search').value.toLowerCase();
+            const blogCards = document.querySelectorAll('.blog-card');
+
+            blogCards.forEach(card => {
+                const topic = card.getAttribute('data-search').toLowerCase();
+                if (topic.includes(searchInput)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <footer>
+        <footdiv>
+            <footdivleft>
+                <h3>Contact</h3>
+                <p>
+                    A-214 Lal Bahadur Shashtri Hall of Residence<br>
+                    Indian Institute of Technology Kharagpur<br>
+                    Kharagpur, West Bengal. PIN Code: 721302<br>
+                    +91 9905912410 (whatsapp/phone)
+                </p>
+            </footdivleft>
+            <footdivcenter>
+                <h3>Links</h3>
+                <a href="navs/about.html" target="_blank">ABOUT</a>
+                <a href="navs/blogs.html"  target="_blank">BLOGS</a>
+                <a href="navs/projects.html" target="_blank">PROJECTS</a>
+                <a href="navs/cv.pdf" target="_blank">CV</a>
+            </footdivcenter>
+            <footdivright>
+                <h3>Social Media</h3>
+                <a href="navs/about.html" target="_blank"><img src="../logos/facebook.svg" alt="FaceBook"></a>
+                <a href="navs/blogs.html"  target="_blank"><img src="../logos/linkedin.svg" alt="LinkedIn"></a>
+                <a href="navs/projects.html" target="_blank"><img src="../logos/github.svg" alt="Github"></a>
+                <a href="mailto:anubhav84prasad@gmail.com" target="_blank"><img src="../logos/mail.svg" alt="Let's connect on email"></a>
+            </footdivright>
+        </footdiv>
+        <p>&copy; 2023 Anubhav Prasad. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
